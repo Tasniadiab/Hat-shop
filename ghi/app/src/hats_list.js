@@ -32,14 +32,14 @@ function HatList() {
             <tbody>
                 {hats.map((hat) => {
                     return(
-                        <tr key= {hat.id}>
-                            <td>{hat.style_name}</td>
-                            <td>{hat.fabric}</td>
-                            <td>{hat.color}</td>
-                            <td><img src={hat.picture_url} width = {300} height = {300}/></td>
-                            <td>{hat.location.shelf_number}</td>
-                        </tr>
-                    )
+                    <tr key= {hat.id}>
+                        <td>{hat.style_name}</td>
+                        <td>{hat.fabric}</td>
+                        <td>{hat.color}</td>
+                        <td><img src={hat.picture_url} width = {300} height = {300}/></td>
+                        <td>{hat.location.closet_name}</td>
+                    </tr>
+                    );
                 })}
             </tbody>
         </table>

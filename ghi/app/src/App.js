@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './MainPage';
 import Nav from './Nav';
-import HatList from './hats_list'
+import HatList from './hats_list';
+import HatForm from './hats_form';
 
 
 function App(props) {

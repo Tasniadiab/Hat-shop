@@ -13,8 +13,14 @@ class HatsListEncoder(ModelEncoder):
     model =  Hats
     properties = [
         "style_name",
-
+        "fabric",
+        "color",
+        "picture_url",
+        "location"
     ]
+    encoders = {
+        "location": LocationVoEncoder(),
+    }
 class HatsDetailEncoder(ModelEncoder):
     model = Hats
     properties = [
